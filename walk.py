@@ -15,7 +15,7 @@ tree.setup() # you must always call setup() first!
 
 # Pattern: flash each LED in turn
 
-while 1: # repeat 5 times
+while 1: # repeat FOREVER.
   for i in range (0,7,1):
     tree.leds_on_and_wait(pow(2,i) + 1, 0.3)
   for j in range (7,0,-1):
